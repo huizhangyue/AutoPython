@@ -27,4 +27,4 @@ class HandleYaml:
 if __name__ == '__main__':
     test = HandleYaml()
     p = test.get_data()
-    print(p)
+    print(p['test_login_pass'])
