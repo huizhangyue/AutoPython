@@ -31,7 +31,6 @@ def test_login():
     log = requests.post(url=login_url, data=params)
     re_login_cookie = log.cookies
 
-
 def test_add_address():
     """
     登录后向个人信息中添加收获地址

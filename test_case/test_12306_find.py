@@ -38,10 +38,11 @@ def test_find12306_care():
     # print(c)
     # return statusCode
     print(statusCode)
+
     try:
         assert statusCode == 200, "返回状态码错误，接口请求失败"
 
-        logger.info("statusCode返回正确-----》%s", statusCode)
+        logger.info("statusCode返回正确-----> %s", statusCode)
     except Exception:
         logger.error("statusCode返回错误-----》 %s", statusCode)
         raise
