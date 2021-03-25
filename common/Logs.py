@@ -54,7 +54,7 @@ class Log(object):
 
     @property
     def Logger(self):
-        """构造收集器，返回looger"""
+        """构造收集器，返回logger"""
         stream_handler, file_handler = self.__ini_handler()
         self.__set_handler(stream_handler, file_handler)
         self.__set_formatter(stream_handler, file_handler)

@@ -2,8 +2,8 @@
 # author： ext.zhangyue12
 # datetime： 2021/3/17 17:54 
 # ide： PyCharm
-import json
 
+import json
 import requests
 
 from common.Logs import Log
@@ -26,10 +26,8 @@ def test_coupon_create():
             "pageIndex": 1, "searchType": "keyword", "pageSize": 60,
             "sessionId": "50ad2647-c75e-4e66-b05c-3d5f106ab1af", "keyword": "", "category": id, "isRecommend": 0}
 
-    # r = RequestsHandler().post_Req(url=create_url, data=data, headers=headers)
-    r = RequestsHandler().post_Req(url=create_url)
+    r = RequestsHandler().post_Req(url=create_url, data=data, headers=headers)
     statusCode = r.status_code
-
     print(statusCode)
 
     try:

@@ -63,5 +63,5 @@ for i in range(0, totalpage):
             print(item[key])
         item_info.append(i)
         products.loc[len(products)] = item_info
-# products.to_csv('cantonfair.csv', encoding='utf_8_sig', index=False)
+products.to_csv('cantonfair.csv', encoding='utf_8_sig', index=False)
 
